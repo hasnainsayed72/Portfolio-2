@@ -69,7 +69,7 @@ export default function Toolkit() {
               <ul className="space-y-2">
                 {certificates.map((c) => (
                   <li key={c.name}>
-                    <a
+                    
                       href={c.url}
                       target="_blank"
                       rel="noopener noreferrer"
