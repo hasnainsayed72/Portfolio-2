@@ -4,9 +4,9 @@ import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hasnainsayed.dev"),
-  title: "Mohammad Hasnain Sayed — ERP & Digital Transformation",
+  title: "Mohammad Hasnain Sayed - ERP & Digital Transformation",
   description:
-    "Customer Success & Implementation leader with 6+ years forging raw operations into refined, high-adoption SaaS and ERP systems across healthcare, manufacturing and FMCG.",
+    "Customer Success & Implementation leader with 7+ years forging raw operations into refined, high-adoption SaaS and ERP systems across healthcare, manufacturing and FMCG.",
   keywords: [
     "ERP",
     "Digital Transformation",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Mohammad Hasnain Sayed" }],
   openGraph: {
-    title: "Mohammad Hasnain Sayed — ERP & Digital Transformation",
+    title: "Mohammad Hasnain Sayed - ERP & Digital Transformation",
     description:
-      "6+ years forging raw operations into systems that scale. 45+ SaaS/ERP go-lives across healthcare, manufacturing and FMCG.",
+      "7+ years forging raw operations into systems that scale. 50+ SaaS/ERP go-lives across healthcare, manufacturing and FMCG.",
     type: "website",
   },
 };
