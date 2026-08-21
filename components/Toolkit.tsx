@@ -66,14 +66,29 @@ export default function Toolkit() {
               <h3 className="mb-5 font-mono text-[0.72rem] uppercase tracking-[0.2em] text-gold">
                 Certificates
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-2">
                 {certificates.map((c) => (
-                  <li key={c.name} className="flex items-baseline justify-between gap-4">
-                    <div>
-                      <div className="text-sm font-medium text-titanium">{c.name}</div>
-                      <div className="text-xs text-ash">{c.issuer}</div>
-                    </div>
-                    <span className="shrink-0 font-mono text-xs text-ash">{c.date}</span>
+                  <li key={c.name}>
+                    <a
+                      href={c.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group -mx-2 flex items-baseline justify-between gap-4 rounded-lg px-2 py-1.5 transition-colors duration-300 hover:bg-titanium/[0.04]"
+                    >
+                      <div>
+                        <div className="flex items-center gap-1.5 text-sm font-medium text-titanium transition-colors duration-300 group-hover:text-gold">
+                          {c.name}
+                          <span
+                            aria-hidden
+                            className="-translate-x-1 text-gold opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                          >
+                            ↗
+                          </span>
+                        </div>
+                        <div className="text-xs text-ash">{c.issuer}</div>
+                      </div>
+                      <span className="shrink-0 font-mono text-xs text-ash">{c.date}</span>
+                    </a>
                   </li>
                 ))}
               </ul>
