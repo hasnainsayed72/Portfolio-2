@@ -277,12 +277,25 @@ export const toolkit: ToolkitGroup[] = [
   },
 ];
 
-export const certificates = [
-  { name: "SQL (Basic)", issuer: "HackerRank", date: "Apr 2024" },
+export type Certificate = {
+  name: string;
+  issuer: string;
+  date: string;
+  url: string;
+};
+
+export const certificates: Certificate[] = [
+  {
+    name: "SQL (Basic)",
+    issuer: "HackerRank",
+    date: "Apr 2024",
+    url: "https://www.hackerrank.com/certificates/10acba330248",
+  },
   {
     name: "Project Management Assessment",
     issuer: "LearnTube.ai",
     date: "Mar 2026",
+    url: "https://certified-fallback.s3.amazonaws.com/certificate_Sayed_Mohammad_Hasnain_2169620_Z6fmtI_.jpg",
   },
 ];
 
