@@ -3,10 +3,13 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hasnainsayed.dev"),
+  metadataBase: new URL("https://hasnain-sayed.vercel.app"),
+
   title: "Mohammad Hasnain Sayed - ERP & Digital Transformation",
+
   description:
     "Customer Success & Implementation leader with 7+ years forging raw operations into refined, high-adoption SaaS and ERP systems across healthcare, manufacturing and FMCG.",
+
   keywords: [
     "ERP",
     "Digital Transformation",
@@ -15,12 +18,22 @@ export const metadata: Metadata = {
     "SaaS",
     "Mohammad Hasnain Sayed",
   ],
+
   authors: [{ name: "Mohammad Hasnain Sayed" }],
+
   openGraph: {
-    title: "Mohammad Hasnain Sayed — ERP & Digital Transformation",
+    title: "Mohammad Hasnain Sayed - ERP & Digital Transformation",
     description:
       "7+ years forging raw operations into systems that scale. 50+ SaaS/ERP go-lives across healthcare, manufacturing and FMCG.",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1920,
+        height: 1080,
+        alt: "Mohammad Hasnain Sayed - ERP & Digital Transformation",
+      },
+    ],
   },
 };
 
@@ -54,6 +67,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
+
       <body className="grain">
         <SmoothScroll>{children}</SmoothScroll>
       </body>
